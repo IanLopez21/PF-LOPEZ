@@ -1,0 +1,38 @@
+
+.contenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    display: grid; 
+    justify-items: center;
+
+    
+    grid-template-columns: 520px 520px; 
+        
+    grid-template-rows: 50px 300px; 
+
+    padding-top: 35px;
+        
+    h1{
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 25px;
+        text-align: justify;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: red;
+        border-radius: 12px;
+    }
+            }
+
+@media (max-width: 768px) {
+
+}
