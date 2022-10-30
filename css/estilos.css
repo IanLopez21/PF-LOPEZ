@@ -97,6 +97,10 @@ footer {
   grid-template-columns: 520px 520px;
   grid-template-rows: 50px 300px;
   padding-top: 35px; }
+  .contenido iframe {
+    padding-right: 20px;
+    width: 100%;
+    height: 290px; }
   .contenido h1 {
     text-transform: uppercase; }
   .contenido p {
@@ -111,23 +115,6 @@ footer {
     font-size: 20px;
     background-color: red;
     border-radius: 12px; }
-
-/*VIDEO*/
-.video {
-  padding-top: 50px;
-  padding-bottom: 60px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .video .vid {
-    padding-top: 20px;
-    width: 420px;
-    height: 380px; }
-
-.desc {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 /*Canal*/
 .galeria {
@@ -166,19 +153,6 @@ footer {
   100% {
     margin-left: -300%; } }
 
-.juego:hover {
-  transform: scale(1.1);
-  transition: 0.5s; }
-
-/*ACERCA DE*/
-.desc {
-  padding: 20px 15px 20px 15px;
-  display: flex;
-  justify-content: center; }
-  .desc p {
-    font-size: 25px;
-    padding: 25px 100px 5px 100px; }
-
 /* TOGGLE */
 .nav-toggle {
   color: white;
@@ -190,7 +164,95 @@ footer {
   cursor: pointer;
   display: none; }
 
-/*Tablet*/
+@media (min-width: 1920px) {
+  /*INICIO*/
+  /*VIDEOS*/
+  .video {
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap; }
+    .video iframe {
+      padding: 10px 30px 10px 30px;
+      width: 50%;
+      height: 500px; }
+  .boton {
+    display: flex;
+    justify-content: center; }
+    .boton a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+      text-decoration: none;
+      font-size: 20px;
+      background-color: red;
+      border-radius: 12px;
+      transition: width; }
+  /*JUEGOS*/
+  .tit {
+    padding-top: 15px;
+    padding-left: 70px; }
+  .sinopsis {
+    padding: 0 100px 0 100px;
+    display: flex;
+    flex-direction: row; }
+    .sinopsis .portada {
+      width: 15%;
+      box-shadow: 3px 1px 10px; }
+    .sinopsis p {
+      padding: 10px 50px 0 50px;
+      font-size: 30px;
+      text-align: justify; }
+  /*CANAL*/
+  .galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden; }
+  .titulo {
+    padding: 25px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 2px 3px #717171; }
+  .juegos {
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .juegos img {
+      padding-right: 10px;
+      padding-top: 10px;
+      width: 20%;
+      height: 20%;
+      border-radius: 20px; }
+  .juego:hover {
+    transform: scale(1.1);
+    transition: 0.5s; }
+  .directos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .directos .directo {
+      padding: 20px 0 20px 0;
+      width: 50%;
+      height: 550px; }
+  /*ACERCA DE*/
+  .desc {
+    display: flex;
+    flex-direction: column; }
+    .desc h1 {
+      font-size: 50px;
+      text-align: center;
+      text-shadow: 1px 2px 3px #444444; }
+    .desc p {
+      padding: 20px 100px 0 100px;
+      font-size: 30px;
+      text-align: center; }
+  footer p {
+    font-size: 20px; } }
+
+/*---->Tablet<----*/
 @media (max-width: 768px) {
   body {
     padding-top: 70px; }
@@ -225,6 +287,9 @@ footer {
   .nav-toggle:focus:not(:focus-visible) {
     outline: none; }
   /*INICIO*/
+  main {
+    width: 100%;
+    height: 100%; }
   .contenido {
     display: none;
     padding: 0 20px 0 20px;
@@ -234,48 +299,154 @@ footer {
     justify-content: space-around; }
     .contenido iframe {
       width: 100%;
-      height: 500%; }
+      height: 400px; }
     .contenido p {
       padding-top: 15px; }
     .contenido img {
       width: 100%;
-      height: 50%; }
+      height: 50%;
+      -webkit-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+      box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42); }
   /*VIDEO*/
+  .video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .video iframe {
+      padding: 10px 20px 10px 20px;
+      height: 200px; }
+  .boton {
+    display: flex;
+    justify-content: center; }
+    .boton a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+      text-decoration: none;
+      font-size: 20px;
+      background-color: red;
+      border-radius: 12px;
+      transition: width; }
+  /*JUEGOS*/
+  .tit {
+    padding-top: 15px; }
+  .sinopsis {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row; }
+    .sinopsis .portada {
+      width: 25%;
+      box-shadow: 3px 1px 10px; }
+    .sinopsis p {
+      padding-left: 25px;
+      font-size: 20px;
+      text-align: justify; }
+  /*CANAL*/
+  .galeria {
+    width: 100%;
+    height: 300px;
+    overflow: hidden; }
+  .titulo {
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 2px 3px #717171; }
+  .juegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .juegos img {
+      padding-right: 10px;
+      padding-top: 10px;
+      width: 30%;
+      height: 30%;
+      border-radius: 20px; }
+  .directo {
+    width: 100%;
+    height: 370px;
+    -webkit-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+    box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42); }
+  /*Acerca De*/
+  .desc {
+    display: flex;
+    flex-direction: column; }
+    .desc h1 {
+      text-align: center;
+      text-shadow: 1px 2px 3px #444444; }
+    .desc p {
+      padding: 20px 30px 0 30px;
+      text-align: justify;
+      font-size: 30px; }
+  footer p {
+    font-size: 12px; } }
+
+/*---->CELULAR<-----*/
+@media (max-width: 390px) {
+  /*INICIO*/
+  .contenido {
+    display: none;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .contenido h1 {
+      padding-top: 15px; }
+    .contenido iframe {
+      width: 100%;
+      height: 165px; }
+    .contenido p {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 15px; }
+    .contenido img {
+      width: 100%;
+      height: 50%;
+      -webkit-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+      box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42); }
+  /*JUEGOS*/
+  .tit {
+    padding-top: 15px; }
+  .sinopsis {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row; }
+    .sinopsis .portada {
+      width: 150px;
+      box-shadow: 3px 1px 10px; }
+    .sinopsis p {
+      padding-left: 25px;
+      font-size: 13px;
+      text-align: justify; }
+  /*CANAL*/
+  .galeria {
+    width: 100%;
+    height: 150px;
+    overflow: hidden; }
+    .galeria .titulo {
+      padding-bottom: 10px; }
+  .directo {
+    width: 100%;
+    height: 240px;
+    -webkit-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42);
+    box-shadow: 15px 15px 32px -6px rgba(0, 0, 0, 0.42); }
+  /*VIDEOS*/
   .video {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .video .vid {
-      width: 100%; } }
-
-.boton {
-  display: flex;
-  justify-content: center; }
-  .boton a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
+    .video iframe {
+      padding: 10px 0 10px 0;
+      width: 100%;
+      height: 210px; }
+  /*Acerca De*/
+  .desc h1 {
+    padding: 15px;
+    text-shadow: 1px 2px 3px #444444; }
+  .desc p {
     font-size: 20px;
-    background-color: red;
-    border-radius: 12px;
-    transition: width; }
-
-/*CANAL*/
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .slider, .slider ul, .slider img {
-    height: 100vh; } }
-
-.juegos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .juegos img {
-    padding-right: 10px;
-    padding-top: 10px;
-    width: 30%;
-    height: 30%;
-    border-radius: 15px; }
-
-/*Celular*/
+    text-align: justify; } }
