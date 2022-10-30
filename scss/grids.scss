@@ -1,11 +1,12 @@
+/*Inicio*/
 
 .contenido{
     width: 100%;
     display: flex;
     justify-content: center;
-
     display: grid; 
     justify-items: center;
+    padding-top: 20px;
 
     
     grid-template-columns: 520px 520px; 
@@ -33,6 +34,5 @@
     }
             }
 
-@media (max-width: 768px) {
 
-}
+            

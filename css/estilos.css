@@ -86,12 +86,14 @@ footer {
   right: 0;
   left: 0; }
 
+/*Inicio*/
 .contenido {
   width: 100%;
   display: flex;
   justify-content: center;
   display: grid;
   justify-items: center;
+  padding-top: 20px;
   grid-template-columns: 520px 520px;
   grid-template-rows: 50px 300px;
   padding-top: 35px; }
@@ -164,6 +166,10 @@ footer {
   100% {
     margin-left: -300%; } }
 
+.juego:hover {
+  transform: scale(1.1);
+  transition: 0.5s; }
+
 /*ACERCA DE*/
 .desc {
   padding: 20px 15px 20px 15px;
@@ -184,6 +190,7 @@ footer {
   cursor: pointer;
   display: none; }
 
+/*Tablet*/
 @media (max-width: 768px) {
   body {
     padding-top: 70px; }
@@ -219,13 +226,20 @@ footer {
     outline: none; }
   /*INICIO*/
   .contenido {
+    display: none;
     padding: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 400px;
-    width: 100%; }
+    justify-content: space-around; }
+    .contenido iframe {
+      width: 100%;
+      height: 500%; }
+    .contenido p {
+      padding-top: 15px; }
+    .contenido img {
+      width: 100%;
+      height: 50%; }
   /*VIDEO*/
   .video {
     display: flex;
@@ -252,3 +266,16 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .slider, .slider ul, .slider img {
     height: 100vh; } }
+
+.juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .juegos img {
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px; }
+
+/*Celular*/

@@ -149,7 +149,11 @@ main{
       75%{margin-left: -300%;}
       100%{margin-left: -300%;}
   }
+.juego:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
 
+}
 
 /*ACERCA DE*/
 .desc{

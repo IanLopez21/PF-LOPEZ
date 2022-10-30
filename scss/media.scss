@@ -1,3 +1,4 @@
+/*Tablet*/
 @media (max-width: 768px) {
     body {
       padding-top: 70px;
@@ -54,13 +55,23 @@
 
     /*INICIO*/
     .contenido{
+      display: none;
       padding: 0 20px 0 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      height: 400px;
-      width: 100%;
+      iframe{
+        width: 100%;
+        height: 500%;
+      }
+      p{
+        padding-top: 15px;
+      }
+      img{
+        width: 100%;
+        height: 50%;
+      }
     }
 
     /*VIDEO*/
@@ -88,11 +99,28 @@
         transition:  width;
       }
     }
-    /*CANAL*/
+
+  /*CANAL*/
 
   @media only screen and (min-width:320px) and (max-width:768px){
     .slider, .slider ul, .slider img{
         height: 100vh;
     }
     }
+
+  .juegos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img{
+      padding-right: 10px;
+      padding-top: 10px;
+      width: 30%;
+      height: 30%;
+      border-radius: 15px;
+
+    }
+  }
   
+/*Celular*/
